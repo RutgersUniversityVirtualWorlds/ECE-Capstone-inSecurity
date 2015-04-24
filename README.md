@@ -15,5 +15,6 @@ InSecurity has several global dependancies that need to be installed
 1. Fork/download the repository
 2. cd to the root of the repo
 3. `npm update` or `npm install` This will update/install all of the dependancies
-4. run `npm start`
-5. got to http://localhost:3000/ in your browser
+4. run `grunt`
+5. run `npm start`
+6. got to http://localhost:3000/ in your browser

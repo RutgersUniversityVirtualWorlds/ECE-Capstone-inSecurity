@@ -1,6 +1,7 @@
 {
   "name": "insecurity",
   "version": "0.0.0",
+  "private": true,
   "scripts": {
     "start": "node app.js"
   },
@@ -10,14 +11,15 @@
   	"debug": "*",
   	"serve-favicon": "*",
     "socket.io": "*",
-    "express": "*",
+    "express": "~4.11.*",
+    "mongojs": "*",
     "p5": "*"
   },
   "devDependencies": {
     "grunt": "*",
     "grunt-contrib-jshint": "*",
-    "grunt-contrib-nodeunit": "*",
-    "grunt-contrib-uglify": "*"
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "*"
   },
   "repository": {
     "type": "git",

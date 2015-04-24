@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>InSecurity - A Strategy Game</title>
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="/css/game.css"></link>
+	
+	<!-- SCRIPT FILES GO HERE -->
+	<script language="javascript" type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/socket.io/node_modules/socket.io-client/socket.io.js"></script>
+	<script language="javascript" type="text/javascript" src="/game.js"></script>
+</head>
+<body>
+	<div class="container"
+		style="width: 900px;
+			border-radius: 1em;
+			padding: 1em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%)">
+		<div class="panel panel-default">
+			<div class="panel-body" style="height: 525px;">
+				<h3 align="center">Select a game you would like to play!</h3>
+				
+				<div class="container" style="width:500px; text-align:center;
+					border-radius: 1em;
+					padding: 1em;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-right: -50%;
+					transform: translate(-50%, -50%)">
+					
+					<a id="Game1" class="btn btn-lg btn-primary" href="playerSelection.html" value="1">Game 1</a>
+					<!--<a id="Game2" class="btn btn-lg btn-success" href="playerSelection.html" value="2">Game 2</a>-->
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<a id="backButton" class="btn btn-lg btn-default pull-right" role="button" href="index.html">Back</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
