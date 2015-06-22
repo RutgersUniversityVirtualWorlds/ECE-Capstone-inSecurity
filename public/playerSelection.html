@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>InSecurity - A Strategy Game</title>
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="/css/game.css"></link>
+	
+	<!-- SCRIPT FILES GO HERE -->
+	<script language="javascript" type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/socket.io/node_modules/socket.io-client/socket.io.js"></script>
+	<script language="javascript" type="text/javascript" src="/game.js"></script>
+
+</head>
+<body>
+	<div class="container"
+		style="width: 900px;
+			border-radius: 1em;
+			padding: 1em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%)">
+		<div class="panel panel-default">
+			<div class="panel-body" style="height: 525px;">
+				<h3 align="center">Choose a player!</h3>
+				
+				<div class="container" style="width:500px; text-align:center;
+					border-radius: 1em;
+					padding: 1em;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-right: -50%;
+					transform: translate(-50%, -50%)">
+					
+					<a id="attacker" class="btn btn-lg btn-danger" align="center" href="game1.html">Attacker</a>
+					<a id="defender" class="btn btn-lg btn-success" align="center" href="game1.html">Defender</a>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="panel-footer">
+				<p id="waitingMessage"></p>
+				<a id="backButton" class="btn btn-lg btn-default pull-right" role="button" href="gameSelection.html">Back</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

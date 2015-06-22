@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>InSecurity - A Strategy Game</title>
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="/css/game.css"></link>
+	
+	<!-- SCRIPT FILES GO HERE -->
+	<script language="javascript" type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/socket.io/node_modules/socket.io-client/socket.io.js"></script>
+	<script>var socket = io.connect(window.location.hostname);</script>
+	
+</head>
+<body>
+	<div class="container"
+		style="width: 900px;
+			border-radius: 1em;
+			padding: 1em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%)">
+		<div class="panel panel-default">
+			<div class="panel-body" style="height: 525px;">
+				<h1 align="center">InSecurity</h1>
+				<div class="container" style="width:900px; text-align:center;
+					border-radius: 1em;
+					padding: 1em;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin-right: -50%;
+					transform: translate(-50%, -50%)">
+					<h3>A game of uncertainty.</h3>
+					<h4>Will you be able to make the right decisions and complete your task before the other player does?</h4>
+
+					<div align="center">
+						<a id="playButton" class="btn btn-lg btn-success" role="button" href="gameSelection.html"><b>Play</b></a>
+						<a id="credButton" class="btn btn-lg btn-default" role="button">Credits</a>
+					</div>
+				</div>
+			</div>
+			<div class="panel-footer" style="height:64px;"></div>
+		</div>
+	</div>
+</body>
+</html>

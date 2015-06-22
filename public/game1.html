@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>InSecurity - A Strategy Game</title>
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="/css/game.css"></link>
+	
+	<!-- SCRIPT FILES GO HERE -->
+	<script language="javascript" type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/socket.io/node_modules/socket.io-client/socket.io.js"></script>
+	<script language="javascript" type="text/javascript" src="/p5/lib/p5.min.js"></script>
+	<script language="javascript" type="text/javascript" src="/p5/lib/addons/p5.dom.js"></script>
+
+	<script language="javascript" type="text/javascript" src="/game.js"></script>
+	
+</head>
+<body>
+	<div class="container"
+		style="width: 900px;
+			border-radius: 1em;
+			padding: 1em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-right: -50%;
+			transform: translate(-50%, -50%)">
+		<div class="panel panel-default">
+			<div class="panel-body" style="height: 525px;">
+				<div id="gameContainer" align="center">
+				</div>
+			</div>
+			<div class="panel-footer">
+				<p id="GameMsg" class="pull-left"></p>
+				<a id="backButton" class="btn btn-lg btn-default pull-right" role="button" href="gameSelection.html">Back</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="settingsModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="settingsModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              	<span aria-hidden="true">&times;</span>
+              </button>
+              <h3 class="modal-title" id="myModalLabel"><b>Game 1: Settings</b></h3>
+            </div>
+          <div class="modal-body">
+              <div class="container">
+                <div class="row">
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" id="startGame"><b>PLAY</b></a>
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
