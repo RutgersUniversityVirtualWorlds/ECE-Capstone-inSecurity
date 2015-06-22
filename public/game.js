@@ -744,7 +744,7 @@ function sendTurnData(gameOver, winner) {
 // game over send data to database
 function gameOver(winner){
 	sendTurnData(true);
-	window.location.assign("http://localhost:3000/gameOver.html")
+	window.location.assign("http://localhost:3000/gameOver.html");
 
 	if (player.type == winner) {
 		document.getElementById('displayWinner').innerText = 'You Won!';
@@ -754,6 +754,7 @@ function gameOver(winner){
 	
 };;$(document).ready(function() {
 	var socket = io.connect(window.location.hostname);
+	
 	$(document).on('click', function(event) {
 		var target = $(event.target);
 
@@ -914,7 +915,10 @@ function userHighlightsPossibleMove(map_x, map_y, mouse_x, mouse_y) {
 		});
 
 		socket.on('foundOpponent', function(opponent, room) {
+			socket.leave(socket.room);
+			socket.join(room);
 
+			startGame(sessionStorage.gameVersion);
 		});
   	});
   	$("#attacker").on("click", function() {
@@ -924,5 +928,23 @@ function userHighlightsPossibleMove(map_x, map_y, mouse_x, mouse_y) {
 			socket.emit('chooseAttacker', socket.id);
 		});
 
+		socket.on('foundOpponent', function(opponent, room) {
+			socket.leave(socket.room);
+			socket.join(room);
+
+			startGame(sessionStorage.gameVersion);
+		});
+
 	});
 });
+
+function startGame(game) {
+	switch(game){
+		case 1:
+			window.location.assign('http://localhost:3000/game1.html');
+			break;
+		default:
+			window.location.assign('http://localhost:3000/game1.html');
+
+	}
+}
