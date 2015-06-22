@@ -1,5 +1,6 @@
 # InSecurity
-
+![Image of gameplay]
+(https://github.com/RutgersUniversityVirtualWorlds/ECE-Capstone-inSecurity/img/Screenshot.png)
 
 ### Dependancies
 InSecurity has several global dependancies that need to be installed.
