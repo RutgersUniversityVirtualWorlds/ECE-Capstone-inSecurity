@@ -8,7 +8,7 @@ Some of these dependancies may require you to run as Administrator or have sudo 
 * [node.js] - `brew install node -g` for mac or `apt-get install nodejs` for ubuntu
 * [Express] - `npm install express -g`
 * [grunt] - `npm install grunt -g`
-* [grunt-cli] - 'npm install -g grunt-cli'
+* [grunt-cli] - `npm install -g grunt-cli`
 * [bower] - `npm install bower -g`
 * [jquery] - `bower install jquery`
 * [bootstrap] - `bower install bootstrap`
